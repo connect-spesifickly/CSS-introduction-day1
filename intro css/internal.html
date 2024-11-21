@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS</title>
+    <style>
+      p {
+        color: blue;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      div {
+        color: green;
+      }
+      .pink {
+        color: pink;
+      }
+      #jakarta {
+        color: crimson;
+      }
+    </style>
+    <!-- eksternal dan internal sama saja, tergantung penempatan import dan internalnya, yang lebih bawah akan dieksekusi terakhir dan menimpa eksekusi sebelumnya -->
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo sint
+      harum distinctio, tempora ad voluptatibus consequatur sed, obcaecati
+      libero explicabo eius ipsum repellat, magni architecto dolore at magnam
+      molestias.
+    </p>
+    <div style="color: rebeccapurple">Purwadhika</div>
+
+    <div class="pink">BSD</div>
+    //class kastanya lebih tinggi daripada selector element
+    <div id="jakarta" class="pink">Jakarts</div>
+    //id lebih tinggi
+    <div>Surabaya</div>
+  </body>
+</html>
